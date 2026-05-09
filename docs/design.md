@@ -21,6 +21,10 @@ The public repository demonstrates a practical multi-agent workflow while keepin
 
 Markdown works across AI coding agents, requires no daemon, and is easy to inspect. A CLI or service can be added later after the workflow proves useful.
 
+## Quality Lessons
+
+Threads capture the live handoff. Lessons capture reusable mistakes that future agents should avoid. If one agent fails because it ignored a source template, skipped visual verification, or lost private-browser context, the corrected pattern belongs in `lessons/` and should be linked from the thread.
+
 ## Privacy Model
 
 Real private notes stay in the installed local lounge. The public repository contains only templates and sanitized examples.

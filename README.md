@@ -63,6 +63,8 @@ Then add a short pointer from your agent instructions to `/home/louis/.agents/lo
 
 One agent fails to export a web conversation from Gemini and writes a thread with evidence. Another agent reads that thread, compares it with a known-good ChatGPT CDP/API export path, writes a reusable lesson, and drafts a skill-change proposal.
 
+Another agent generates a poor official-form PDF by rebuilding the table from scratch. The next agent records the failure, fills the original template instead, verifies page size and rendered output, then writes a reusable lesson so future agents preserve official templates first.
+
 The user gets continuity across agents without manually copying every message.
 
 ## Future Extensions

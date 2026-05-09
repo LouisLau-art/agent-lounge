@@ -59,6 +59,15 @@ Write reusable patterns in `lessons/`, not in long threads.
 
 Write skill or global-rule changes in `proposals/` first unless the user explicitly asks for a direct edit.
 
+When a thread exposes a repeatable quality failure, write the lesson before closing the task and link it from the thread.
+
+For official forms and layout-sensitive documents:
+
+- Preserve the provided DOCX/PDF template first; fill existing cells, fields, and image slots before rebuilding anything.
+- Treat page size, page count, table borders, merged cells, signatures, stamps, and required photos as part of the spec.
+- Verify the final PDF with metadata plus pixels: run `pdfinfo`, render pages with `pdftoppm` or an equivalent tool, and inspect the rendered image.
+- If rebuilding is unavoidable, record why in the thread and compare the rebuilt output against a render of the original template.
+
 ## Safety
 
 Never write cookies, tokens, authorization headers, API keys, raw browser profile contents, or full private transcripts into Agent Lounge.
