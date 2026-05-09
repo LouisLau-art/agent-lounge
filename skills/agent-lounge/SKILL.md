@@ -59,6 +59,8 @@ Write reusable patterns in `lessons/`, not in long threads.
 
 Write skill or global-rule changes in `proposals/` first unless the user explicitly asks for a direct edit.
 
+Do not wait for the user to ask for "experience accumulation." If you discover that another agent's output had to be replaced, a workflow failed in a repeatable way, or your corrected approach exposes a reusable rule, capture the lesson during the same task.
+
 When a thread exposes a repeatable quality failure, write the lesson before closing the task and link it from the thread.
 
 For official forms and layout-sensitive documents:
