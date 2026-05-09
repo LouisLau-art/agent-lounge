@@ -35,6 +35,8 @@ Do not use it for one-off notes that will never be useful to another agent.
 
 When an agent is close to quota, context, or model limits, create or update a thread before it stops being useful.
 
+Do not assume the agent can read its exact remaining quota. If quota is not available from a reliable CLI/API, use user-provided quota snapshots plus milestone-based handoffs.
+
 The handoff thread must tell the next agent:
 
 - latest user intent
@@ -46,6 +48,8 @@ The handoff thread must tell the next agent:
 - one concrete next action
 
 If taking over from a quota-limited agent, read the handoff thread first, then verify the workspace state locally before continuing.
+
+Write or refresh a handoff even without an exact quota number when starting a long task, after a meaningful milestone, before risky edits, or after discovering a repeatable failure.
 
 ## Write Rules
 
