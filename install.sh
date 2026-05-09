@@ -10,12 +10,14 @@ mkdir -p \
   "$TARGET_DIR/lessons" \
   "$TARGET_DIR/proposals" \
   "$TARGET_DIR/archive/threads" \
-  "$TARGET_DIR/archive/proposals"
+  "$TARGET_DIR/archive/proposals" \
+  "/home/louis/.agents/skills/agent-lounge"
 
 install -m 0644 "$ROOT_DIR/templates/README.md" "$TARGET_DIR/README.md"
 install -m 0644 "$ROOT_DIR/templates/thread.md" "$TARGET_DIR/templates/thread.md"
 install -m 0644 "$ROOT_DIR/templates/lesson.md" "$TARGET_DIR/templates/lesson.md"
 install -m 0644 "$ROOT_DIR/templates/proposal.md" "$TARGET_DIR/templates/proposal.md"
+install -m 0644 "$ROOT_DIR/skills/agent-lounge/SKILL.md" "/home/louis/.agents/skills/agent-lounge/SKILL.md"
 
 if [ ! -f "$TARGET_DIR/ACTIVE.md" ]; then
   install -m 0644 "$ROOT_DIR/templates/ACTIVE.md" "$TARGET_DIR/ACTIVE.md"

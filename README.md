@@ -43,6 +43,12 @@ The installer creates or updates:
   archive/
 ```
 
+It also installs the `agent-lounge` skill into:
+
+```text
+/home/louis/.agents/skills/agent-lounge/SKILL.md
+```
+
 Then add a short pointer from your agent instructions to `/home/louis/.agents/lounge/README.md`.
 
 ## Workflow
