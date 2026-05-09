@@ -1,0 +1,14 @@
+# Never commit private operational lounge data.
+.agents/
+lounge-private/
+private/
+out/
+logs/
+*.log
+*.ndjson
+*.sqlite
+*.db
+
+# Local editor/system files.
+.DS_Store
+Thumbs.db
