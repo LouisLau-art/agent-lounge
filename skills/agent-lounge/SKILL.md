@@ -31,6 +31,22 @@ Do not use it for one-off notes that will never be useful to another agent.
 4. Inspect the real workspace before changing files.
 5. Update the thread with only the useful handoff-lite facts.
 
+## Quota Handoff Protocol
+
+When an agent is close to quota, context, or model limits, create or update a thread before it stops being useful.
+
+The handoff thread must tell the next agent:
+
+- latest user intent
+- current workspace and relevant files
+- commands already run and outputs that matter
+- dirty git state and what not to touch
+- completed work
+- blocker or risk
+- one concrete next action
+
+If taking over from a quota-limited agent, read the handoff thread first, then verify the workspace state locally before continuing.
+
 ## Write Rules
 
 For active work, write or update one file under `threads/`.
